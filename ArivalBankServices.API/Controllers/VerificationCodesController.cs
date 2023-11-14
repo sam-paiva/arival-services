@@ -43,7 +43,7 @@ namespace ArivalBankServices.API.Controllers
 
             if (result.IsSuccess) return Ok();
             if(result.Exception is CodeNotFoundException)
-                return NotFound("Code not found");
+                return NotFound(result.Exception.Message);
 
             return BadRequest(result.Exception.Message);
         }

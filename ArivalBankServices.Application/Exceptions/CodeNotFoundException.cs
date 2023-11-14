@@ -2,7 +2,7 @@
 {
     public class CodeNotFoundException : Exception
     {
-        public CodeNotFoundException() : base("Code not found")
+        public CodeNotFoundException() : base("No code found for the requested phone number")
         {
         }
     }

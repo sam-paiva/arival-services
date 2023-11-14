@@ -45,7 +45,7 @@ namespace ArivalBankServices.Core.Domain
             UpdateDate = DateTime.UtcNow;
         }
 
-        [GeneratedRegex("^\\d{3}\\d{8,9}$")]
+        [GeneratedRegex("^\\d{1,}$")]
         public static partial Regex PhoneNumberRegex();
     }
 }

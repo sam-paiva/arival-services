@@ -20,7 +20,7 @@ namespace ArivalBankServices.Application.Commands.ValidateConfirmationCode
                 && c.CodeStatus == CodeStatus.Pending && c.ConfirmationCode == request.ConfirmationCode);
 
             if (code is null)
-                Result.Error(new CodeNotFoundException());
+                return Result.Error(new CodeNotFoundException());
 
             if (code!.IsCodeExpired)
             {
