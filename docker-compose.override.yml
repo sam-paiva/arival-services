@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  arivalbankservices.api:
+    depends_on: 
+      - mongo
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "5000:80"
+      - "5001:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+    networks: 
+      - default-network
+  mongo:
+    image: mongo:6
+    command: [--replSet, my-replica-set, --bind_ip_all, --port, "27017"]
+    ports:
+      - 27018:27017
+    volumes:
+      - ${WEBAPP_STORAGE_HOME}/site:/data/db
+    container_name: mongodb
+    expose:
+      - 27017
+    healthcheck:
+      test: test $$(mongosh --port 27017 --quiet --eval "try {rs.initiate({_id:'my-replica-set',members:[{_id:0,host:\"mongo:27017\"}]})} catch(e) {rs.status().ok}") -eq 1
+      interval: 10s
+      start_period: 30s
+    networks: 
+      - default-network
+
+networks:
+  default-network:
+    driver: bridge

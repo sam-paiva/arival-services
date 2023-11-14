@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  arivalbankservices.api:
+    image: ${DOCKER_REGISTRY-}arivalbankservicesapi
+    build:
+      context: .
+      dockerfile: ArivalBankServices.API/Dockerfile

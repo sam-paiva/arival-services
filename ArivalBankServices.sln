@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArivalBankServices.API", "ArivalBankServices.API\ArivalBankServices.API.csproj", "{D88D60D6-8406-48AD-87E3-6D36838F02EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArivalBankServices.Core", "ArivalBankServices.Core\ArivalBankServices.Core.csproj", "{65DA4A63-F786-47FF-9F95-1A9454BE9570}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArivalBankServices.Infra.DataAccess", "ArivalBankServices.Infra.DataAccess\ArivalBankServices.Infra.DataAccess.csproj", "{4D493AB5-69AF-418D-A236-192FA718523D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArivalBankServices.IoC", "ArivalBankServices.IoC\ArivalBankServices.IoC.csproj", "{77F58F8F-1CE4-4DB8-8243-BC9D34AA8EAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArivalBankServices.Application", "ArivalBankServices.Application\ArivalBankServices.Application.csproj", "{A3A5C1D9-7601-4B3C-8A85-78421CD961DA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{01C9684B-330D-47D0-AA2F-1B0DF66BF336}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D88D60D6-8406-48AD-87E3-6D36838F02EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88D60D6-8406-48AD-87E3-6D36838F02EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88D60D6-8406-48AD-87E3-6D36838F02EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88D60D6-8406-48AD-87E3-6D36838F02EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65DA4A63-F786-47FF-9F95-1A9454BE9570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65DA4A63-F786-47FF-9F95-1A9454BE9570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65DA4A63-F786-47FF-9F95-1A9454BE9570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65DA4A63-F786-47FF-9F95-1A9454BE9570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D493AB5-69AF-418D-A236-192FA718523D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D493AB5-69AF-418D-A236-192FA718523D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D493AB5-69AF-418D-A236-192FA718523D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D493AB5-69AF-418D-A236-192FA718523D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77F58F8F-1CE4-4DB8-8243-BC9D34AA8EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77F58F8F-1CE4-4DB8-8243-BC9D34AA8EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77F58F8F-1CE4-4DB8-8243-BC9D34AA8EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77F58F8F-1CE4-4DB8-8243-BC9D34AA8EAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3A5C1D9-7601-4B3C-8A85-78421CD961DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A5C1D9-7601-4B3C-8A85-78421CD961DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A5C1D9-7601-4B3C-8A85-78421CD961DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A5C1D9-7601-4B3C-8A85-78421CD961DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01C9684B-330D-47D0-AA2F-1B0DF66BF336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C9684B-330D-47D0-AA2F-1B0DF66BF336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C9684B-330D-47D0-AA2F-1B0DF66BF336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C9684B-330D-47D0-AA2F-1B0DF66BF336}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E0876E3-AB2C-428B-AC22-BFF948E5A338}
+	EndGlobalSection
+EndGlobal
